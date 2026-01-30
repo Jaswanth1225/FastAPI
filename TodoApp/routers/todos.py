@@ -6,7 +6,10 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from starlette import status
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/todos",
+    tags=['todos']
+)
 
 
 def get_db():
