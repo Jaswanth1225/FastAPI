@@ -76,7 +76,7 @@ async def create_user(create_user_request: CreateUser, db: db_dependency):
     create_user_model = Users(
         email = create_user_request.email,
         username = create_user_request.username,
-        fist_name = create_user_request.first_name,
+        first_name = create_user_request.first_name,
         last_name = create_user_request.last_name,
         hashed_password = bcrypt_context.hash(create_user_request.password),
         role = create_user_request.role,
