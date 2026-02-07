@@ -166,7 +166,7 @@
     }
 
     // Register JS
-    const registerForm = document.getElementById('registerForm');
+    const registerForm = document.getElementById('RegisterForm');
     if (registerForm) {
         registerForm.addEventListener('submit', async function (event) {
             event.preventDefault();
